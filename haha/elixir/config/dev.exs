@@ -8,6 +8,7 @@ use Mix.Config
 # with brunch.io to recompile .js and .css sources.
 config :haha, HaHaWeb.Endpoint,
   http: [port: 4000],
+  #https: [port: 443, keyfile: "priv/server.key", certfile: "priv/server.pem"],
   debug_errors: true,
   code_reloader: true,
   check_origin: false,
@@ -24,7 +25,6 @@ config :haha, HaHaWeb.Endpoint,
 #
 # The `http:` config above can be replaced with:
 #
-#     https: [port: 4000, keyfile: "priv/server.key", certfile: "priv/server.pem"],
 #
 # If desired, both `http:` and `https:` keys can be
 # configured to run both http and https servers on

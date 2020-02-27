@@ -38,7 +38,8 @@ defmodule HaHa.Mixfile do
       {:gettext, "~> 0.11"},
       {:phoenix_live_reload, "~> 1.2.1", only: :dev},
       {:jason, "~> 1.1.2"},
-      {:plug_cowboy, "~> 2.1.0"}
+      {:plug_cowboy, "~> 2.1.0"},
+      {:x509, "~> 0.8.0", only: :dev}
     ]
   end
 end

@@ -21,6 +21,11 @@ config :logger, :console,
 # Use Jason for JSON parsing in Phoenix
 config :phoenix, :json_library, Jason
 
+config :mime, :types, %{
+      "application/openc2-cmd+json;version=1.0" => ["json"],
+      "application/openc2-rsp+json;version=1.0" => ["json"]
+    }
+
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 import_config "#{Mix.env}.exs"

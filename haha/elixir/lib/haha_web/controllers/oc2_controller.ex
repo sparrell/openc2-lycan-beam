@@ -10,6 +10,7 @@ defmodule HaHaWeb.OC2Controller do
       "action" not in tops ->
         ## :unprocessable_entity - 422
         Logger.debug "command no action #{inspect params}"
+        Logger.debug "command no action #{inspect conn}"
         send_resp(conn, :unprocessable_entity, "Oops! no action?")
       ## is target missing?
       "target" not in tops ->
